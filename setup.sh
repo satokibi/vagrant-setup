@@ -51,7 +51,7 @@ sudo yum -y install nodejs
 # }}}
 
 # install jdk {{{
-sudo yum install java-1.8.0-openjdk-devel
+sudo yum -y install java-1.8.0-openjdk-devel
 # }}}
 
 # install python3.6 {{{
