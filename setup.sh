@@ -25,6 +25,7 @@ sudo make prefix=/usr/local install
 git config --global user.name "satokibi"
 git config --global user.email td182007@cis.fukuoka-u.ac.jp
 git config --global color.ui true
+git config --global core.editor 'vim -c "set fenc=utf-8"'
 # }}}
 
 # install vim {{{
