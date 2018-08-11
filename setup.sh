@@ -78,3 +78,7 @@ sudo yum -y install http://dev.mysql.com/get/mysql-community-release-el6-5.noarc
 sudo yum -y install mysql mysql-devel mysql-server mysql-utilities
 sudo chkconfig mysqld on
 # }}}
+
+# install httpd {{{
+sudo yum -y install httpd
+# }}}
