@@ -81,4 +81,8 @@ sudo chkconfig mysqld on
 
 # install httpd {{{
 sudo yum -y install httpd
+sudo service httpd start
+sudo chkconfig httpd on
+sudo service iptables stop
+sudo chkconfig iptables off
 # }}}
