@@ -86,3 +86,13 @@ sudo chkconfig httpd on
 sudo service iptables stop
 sudo chkconfig iptables off
 # }}}
+
+# install ruby {{{
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+cd ~/.rbenv && src/configure && make -C src
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
+~/.rbenv/bin/rbenv init
+mkdir -p "$(rbenv root)"/plugins
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+sudo yum install -y readline-devel
+# }}}
