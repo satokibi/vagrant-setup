@@ -96,3 +96,7 @@ mkdir -p "$(rbenv root)"/plugins
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 sudo yum install -y readline-devel
 # }}}
+
+# install python-pillow {{{
+sudo pip3 install pillow
+}}}
