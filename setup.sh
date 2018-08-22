@@ -100,3 +100,7 @@ sudo yum install -y readline-devel
 # install python-pillow {{{
 sudo pip3 install pillow
 }}}
+
+# install numpy {{{
+sudo pip3 install numpy
+# }}}
