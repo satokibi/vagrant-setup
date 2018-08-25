@@ -108,3 +108,7 @@ sudo pip3 install numpy
 # install matplotlib {{{
 sudo pip3 install matplotlib
 # }}}
+
+# install opencv {{{
+sudo pip3 install opencv-python
+# }}}
