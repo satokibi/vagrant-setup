@@ -8,6 +8,7 @@ sudo usermod -s /bin/zsh vagrant
 # }}}
 
 # install git {{{
+cd
 sudo yum -y install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
 sudo yum -y install gcc
 sudo yum -y install cpan
@@ -29,6 +30,7 @@ git config --global core.editor 'vim -c "set fenc=utf-8"'
 # }}}
 
 # install vim {{{
+cd
 sudo yum -y install mercurial ncurses-devel make
 cd /usr/local/src
 sudo hg clone https://bitbucket.org/vim-mirror/vim vim
@@ -39,10 +41,11 @@ sudo make install
 # }}}
 
 # setup dotfiles {{{
+cd
 sudo yum -y update nss
 git clone https://github.com/satokibi/dotfiles.git
 cd dotfiles
-./setup_for_linux.sh
+./setup.sh
 # }}}
 
 # install node.js {{{
